@@ -1,82 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body> 
-    <!-- Basic HTML Tags -->
-    <p>
-        <!-- <Body> & <P> Explanation -->
-        opening tag begins with "body" and closing tag ends with "/body"
-        p is the opening tag for a paragraph element in HTML. It is used to define a block of text that is a paragraph. The closing tag for a paragraph is.</p>
-
-        <!-- <h1> to <h6> Explanation -->
-        suppose you want to add headline to your document, you can use the h1 tag for the main title, h2 for subheadings, and so on up to h6 for smaller headings. For example:
-            <h1>Heading level 1</h1>
-            <h2>Heading level 2</h2>
-            <h3>Heading level 3</h3>
-            <h4>Heading level 4</h4>
-            <h5>Heading level 5</h5>
-            <h6>Heading level 6</h6>
-        Note: Only one h1 element should be used in a .html file.
-
-        <hr>
-
-        <!-- <br> Explanation -->
-        Suppose we want to add a new line in the paragraph, we can use the <br> tag. This tag is a self-closing tag and does not require a closing tag. For example:
-        <p>This is a paragraph.<br>This is a new line in the same paragraph.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Discover expert tips and techniques for learning HTML basics, understanding elements, and building web pages." />
+    <meta content="HTML Basics Tutorial" property="og:title" />
+    <meta property="og:type" content="website" />
+    <meta content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png" property="og:image" />
+    <meta property="og:url" content="https://www.example.com" />
+    <title>HTML Basics Tutorial</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      }
+      .box {
+        padding: 15px;
+        margin: 10px 0;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      .red-box {
+        background-color: #ffe6e6;
+        border-color: #ff9999;
+      }
+      .blue-box {
+        background-color: #e6f3ff;
+        border-color: #99ccff;
+      }
+      #red-box {
+        background-color: #ffcccc;
+        border: 2px solid #ff6666;
+      }
+      a:link { color: #0066cc; }
+      a:visited { color: #800080; }
+      a:hover { color: #ff6600; text-decoration: underline; }
+      a:focus { outline: 2px solid #ff6600; }
+      a:active { color: #cc0000; }
+    </style>
+  </head>
+  
+  <body>
+    <!-- This is an HTML comment. It won't be visible on the page -->
+    
+    <div class="container">
+      <main>
+        <h1 id="title">HTML Basics Tutorial</h1>
         
-        <hr>
-
-        <!-- text formatting tags -->
-        <b>element to bold text</b>
-        <i>element to italicize text</i>
-        <u>element to underline text</u>
-        <s>element to strikethrough text</s>
-            example of text formatting:
-            <b>Cutting Down, Ramping Up:</b>We have a robust strategy for <s>low hanging fruits</s> mission-critical objectives that moves the needle at all costs. it's time to double down on <b>revenue growth</b> while <u>cutting costs.</u> This is a win-win initiative, a  win for us and our amazing shareholders!
+        <p>HTML represents the content and structure of the web page. This page demonstrates all the <em>fundamental concepts</em> from the HTML basics guide.</p>
         
-         <hr>
+        <!-- Heading Elements Demo -->
+        <section>
+          <h1>most important heading element</h1>
+          <h2>second most important heading element</h2>
+          <h3>third most important heading element</h3>
+          <h4>fourth most important heading element</h4>
+          <h5>fifth most important heading element</h5>
+          <h6>least important heading element</h6>
+        </section>
 
-        <!-- <ul> List Explanation -->
-        "ul" is an unordered list, which means the items in the list are not numbered. Each item in the list is defined by the "li" tag, which stands for "list item". The closing tag for an unordered list is "/ul".
-            <ul>
-                <li>🧺 Go to laundromat.</li>
-                <li>🖥 Code for 45 min.</li>
-                <li>💅 Take a bubble bath.</li>
-             </ul>
+        <!-- Paragraph and Text Formatting -->
+        <section>
+          <h2>Text Formatting Examples</h2>
+          <p>This is a paragraph element.</p>
+          <p>Cats <em>love</em> lasagna.</p>
+          <p><strong>Important:</strong> Before proceeding, make sure to wear your safety goggles.</p>
+          <p>This is an &lt;img /&gt; element example using HTML entities</p>
+          <p>Here's an ampersand symbol: Cookies &amp; Cream</p>
+        </section>
 
-        <hr>
+        <!-- Image with Figure -->
+        <section>
+          <h2>Images and Figures</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          
+          <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+          </figure>
+        </section>
 
-        <!-- <ol> List Explanation -->
-        "ol" is an ordered list, which means the items in the list are numbered. Each item in the list is defined by the "li" tag, which stands for "list item". The closing tag for an ordered list is "/ol".
-            <ol>
-                <li>🧺 Go to laundromat.</li>
-                <li>🖥 Code for 45 min.</li>
-                <li>💅 Take a bubble bath.</li>
-            </ol>
+        <!-- Links with Different Targets -->
+        <section>
+          <h2>Link Examples</h2>
+          <p>Here are different types of links:</p>
+          <ul>
+            <li><a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> (default target)</li>
+            <li><a href="https://freecodecamp.org" target="_self">Visit freeCodeCamp (_self)</a></li>
+            <li><a href="https://freecodecamp.org" target="_blank">Visit freeCodeCamp (_blank)</a></li>
+            <li><a href="https://freecodecamp.org" target="_parent">Visit freeCodeCamp (_parent)</a></li>
+            <li><a href="https://freecodecamp.org" target="_top">Visit freeCodeCamp (_top)</a></li>
+          </ul>
+          
+          <p>Read more on the <a href="about.html">About Page</a> (relative path example)</p>
+          <p><a href="https://design-style-guide.freecodecamp.org/img/fcc_secondary_small.svg">View fCC Logo</a> (absolute path example)</p>
+        </section>
 
-        <hr>
+        <!-- List Examples -->
+        <section>
+          <h2>List Examples</h2>
+          
+          <h3>Things cats love (Unordered List):</h3>
+          <ul>
+            <li>catnip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+          </ul>
 
-        <!-- <a> Link Explanation -->
-        "a" is the anchor tag, which is used to create hyperlinks. The "href" attribute specifies the URL of the page the link goes to. The closing tag for an anchor tag is "/a".
-        <a href="https://github.com/mhmmdlmufid">My Github</a>
-        Note: This can also be used to point to an email or phone number using a 
-        "mailto:" "tel:" or "sms:" parameter:
-        <a href="mailto:mufid.luthfi@gmail.com">📧</a>
-        <a href="tel:0882-1194-7551">🤙</a>
-        <a href="sms:0882-1194-7551">💬</a>
+          <h3>Things cats hate (Ordered List):</h3>
+          <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+          </ol>
+        </section>
 
-        <hr>
+        <!-- Div and Class Examples -->
+        <section>
+          <h2>Containers and Styling</h2>
+          
+          <div>
+            <h3>I am a heading inside a div</h3>
+            <p>I am a paragraph inside a div</p>
+          </div>
 
-        <!-- <img> Image Explanation -->
-        What if we want to add images? We can use a similar format, but with the "img" image element.
-        <p>Here's a Thorfinn pic:</p>
-        <img src="https://cdn.cosmos.so/752cc0bf-6794-41a2-969e-a70717f765d5?format=jpeg">
+          <div class="box">
+            <h3>Generic Box</h3>
+            <p>This div has class="box"</p>
+          </div>
 
-        <hr>
-    </p>
-</body>
+          <div class="box red-box">
+            <h3>Red Box</h3>
+            <p>This div has class="box red-box" (multiple classes)</p>
+          </div>
+
+          <div class="box blue-box">
+            <h3>Blue Box</h3>
+            <p>This div has class="box blue-box"</p>
+          </div>
+
+          <div id="red-box">
+            <h3>ID Example</h3>
+            <p>This div has id="red-box" (unique identifier)</p>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section>
+          <h2>About Me</h2>
+          <p>Hi, I am Jane Doe and I am a web developer.</p>
+        </section>
+
+        <!-- Media Elements -->
+        <section>
+          <h2>Multimedia Content</h2>
+          
+          <h3>Audio Example:</h3>
+          <audio src="CrystalizeThatInnerChild.mp3" controls></audio>
+          
+          <h3>Audio with Multiple Sources:</h3>
+          <audio controls>
+            <source src="audio.ogg" type="audio/ogg" />
+            <source src="audio.wav" type="audio/wav" />
+            <source src="audio.mp3" type="audio/mpeg" />
+          </audio>
+
+          <h3>Audio with Loop and Muted:</h3>
+          <audio
+            src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3"
+            loop
+            controls
+            muted
+          ></audio>
+
+          <h3>Video Example:</h3>
+          <video
+            src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+            loop
+            controls
+            muted
+            poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+            width="620"
+          ></video>
+        </section>
+
+        <!-- Iframe Examples -->
+        <section>
+          <h2>Embedded Content</h2>
+          
+          <h3>Simple Iframe:</h3>
+          <iframe src="https://www.example.com" title="Example Site"></iframe>
+          
+          <h3>YouTube Video Embedded:</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/PkZNo7MFNFg?si=-UBVIUNM3csdeiWF"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <!-- Form Elements -->
+        <section>
+          <h2>Form Elements</h2>
+          <form>
+            <p>Regular input: <input type="text" placeholder="Enter text here"></p>
+            <p>Image input: <input type="image" alt="Submit button image" src="https://via.placeholder.com/100x30?text=Submit"></p>
+            <p>Disabled input: <input type="text" value="Cannot edit this" disabled></p>
+            <p>Readonly input: <input type="text" value="Read only text" readonly></p>
+            <p>Required input: <input type="email" placeholder="Required email" required></p>
+          </form>
+        </section>
+
+        <!-- Path Examples -->
+        <section>
+          <h2>Path Examples</h2>
+          <p>Understanding different path types:</p>
+          <ul>
+            <li>Current directory: <code>./favicon.ico</code></li>
+            <li>Parent directory: <code>../src/index.css</code></li>
+            <li>Subdirectory: <code>public/index.html</code></li>
+          </ul>
+        </section>
+
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+      </footer>
+    </div>
+
+    <!-- External Script Example -->
+    <script src="path-to-javascript-file.js"></script>
+    
+    <!-- Inline Script Example -->
+    <script>
+      alert("Welcome to freeCodeCamp");
+    </script>
+
+  </body>
 </html>
